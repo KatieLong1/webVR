@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+   
+  </head>  
+  <body>
+     <a-scene>
+       <a-assets>
+         <img id="grass" src ="https://cdn.glitch.com/14b7982f-9dde-4549-afb5-21f142c24d4e%2Fgrass.jpg?v=1592341285324">
+       </a-assets>
+       <a-sky color="blue"></a-sky>
+     <!-- <a-box position="0 0 -4" color="blue"></a-box>
+      <a-sphere position = "2 1 -3" color="pink" scale="0.5"></a-sphere>
+       <a-cylinder position = "-3 0 -6" color="purple"></a-cylinder>
+       <a-dodecahedron position = "0 0 -1" color="black"></a-dodecahedron>-->
+       <a-plane src="#grass" position = "-10 0 0" rotation = "-90 0 0" repeat= "20 20" width = "100" height="100"></a-plane>
+      <a-entity id="tree1" position="0 0 -6">
+        <a-box position = "0 0.5 0" color="rgb(117, 102, 79)" width="0.2" depth="0.2" height="1"></a-box>
+          <a-box position = "0 1.5 0" color="rgb(99, 148, 30)"></a-box>
+      </a-entity>
+        <a-entity id="tree2" position="-1.9 0 -4.4">
+        <a-box position = "0 0.5 0" color="rgb(117, 102, 79)" width="0.2" depth="0.2" height="1"></a-box>
+          <a-box position = "0 1.5 0" color="rgb(99, 148, 30)"></a-box>
+      </a-entity>
+       <a-entity id="tree3" position="-4 0 -5.4">
+        <a-box position = "0 0.5 0" color="rgb(117, 102, 79)" width="0.2" depth="0.2" height="1"></a-box>
+          <a-box position = "0 1.5 0" color="rgb(99, 148, 30)"></a-box>
+      </a-entity>
+        <a-entity id="tree4" position="3 0 -5.4">
+        <a-box position = "0 0.5 0" color="rgb(117, 102, 79)" width="0.2" depth="0.2" height="1"></a-box>
+          <a-box position = "0 1.5 0" color="rgb(99, 148, 30)"></a-box>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
