@@ -11,10 +11,15 @@
   </head>  
   <body>
      <a-scene>
-      <a-box position="0 0 -4" color="blue"></a-box>
+       <a-assets>
+         <img id="grass" src ="https://cdn.glitch.com/14b7982f-9dde-4549-afb5-21f142c24d4e%2Fgrass.jpg?v=1592341285324">
+       </a-assets>
+       <a-sky color="blue"></a-sky>
+     <!-- <a-box position="0 0 -4" color="blue"></a-box>
       <a-sphere position = "2 1 -3" color="pink" scale="0.5"></a-sphere>
        <a-cylinder position = "-3 0 -6" color="purple"></a-cylinder>
-       <a-dodecahedron position = "0 0 -1" color="black"></a-dodecahedron>
+       <a-dodecahedron position = "0 0 -1" color="black"></a-dodecahedron>-->
+       <a-plane src="#grass" position = "-10 0 0" rotation = "-90 0 0" repeat= "20 20"width = "100" height="100"></a-plane>
          
     </a-scene>
   </body>
